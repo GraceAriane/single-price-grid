@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Karla", sans-serif;
+    background-color: hsl(204, 43%, 93%);
+}
+.container{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 5px 5px 30px #00000023;
+    max-width: 95%;
+    width: 630px;
+}
+.card1, .card2, .card3{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+.card2, .card3{
+    width: 50%;
+}
+.card1{ 
+    background-color: white;
+    gap: 20px;
+    border-radius: 8px 8px 0px 0px;
+}
+.card2{ 
+    background-color: hsl(179, 62%, 43%);
+    border-radius: 0px 0px 0px 8px;
+}
+.card3{ 
+    background-color: rgb(74, 190, 189);
+    border-radius: 0px 0px 8px 0px;
+}
+.card1 h1{
+    font-size: 25px;
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+}
+.card1 h2{
+    font-size: 18px;
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+}
+.card1 p{ 
+    color: hsl(218, 22%, 67%);
+    line-height: 25px;
+}
+.rest-cards{
+    display: flex;
+    color: white;
+}
+.card2 p{
+    font-size: 15px;
+    color: #ffffffbe;
+    margin-top: -10px;
+}
+h3{
+    font-size: 18px;
+    font-weight: 500;
+}
+li{
+    font-size: 14px;
+    list-style-type: none;
+    margin-bottom: 5px;
+    color: rgba(255, 255, 255, 0.651);
+}
+.price{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.price span:first-child{
+    font-size: 29px;
+    font-weight: 700;
+}
+.price span:last-child{
+    color: rgba(255, 255, 255, 0.507);
+}
+.card2 a{
+    text-decoration: none;
+    color: #fff;
+    background-color: hsl(71, 73%, 54%);
+    margin-top: 15px;
+    text-align: center;
+    padding: 15px;
+    font-weight: 700;
+    border-radius: 8px;
+    box-shadow:  0px 5px 10px #00000028;
+}
+@media (min-width:320px) and (max-width:420px){
+    body{
+        height: auto;
+    }
+    .container{
+        max-width: 90%;
+        margin: 50px auto;
+    }
+    .rest-cards{
+        flex-direction: column;
+    }
+    .card2{
+        border-radius: 0px;
+    }
+    .card3{
+        border-radius: 0px 0px 8px 8px;
+    }
+    .card2,.card3{
+        width: 100%;
+    }
+}
