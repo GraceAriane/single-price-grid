@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [single price grid](https://your-live-site-url.com)
+- Live Site URL: [single price grid](https://single-price-grid-nu-henna.vercel.app/)
 
 ## My process
 
